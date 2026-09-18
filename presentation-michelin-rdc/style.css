@@ -159,10 +159,9 @@ button {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  background: #111111;
-  padding: 0.3rem 0.75rem;
+  background: transparent;
+  padding: 0.2rem 0.35rem;
   border-radius: 10px;
-  box-shadow: var(--shadow);
 }
 
 .control-actions {
@@ -249,9 +248,9 @@ button {
 }
 
 .side-nav-header .brand-logo {
-  background: #111;
-  border-radius: 8px;
-  padding: 0.25rem 0.4rem;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
 }
 
 .side-nav-list button {
@@ -510,15 +509,15 @@ button {
 }
 
 .cover-logo .brand-logo {
-  background: #111;
-  border-radius: 16px;
-  padding: 0.75rem 1.25rem;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
 }
 
 .outro-content .brand-logo {
-  background: #111;
-  border-radius: 16px;
-  padding: 0.65rem 1.1rem;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
   display: block;
 }
 

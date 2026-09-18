@@ -865,9 +865,11 @@ button {
 .pole-chip-label {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.55rem;
   padding: 0.75rem 0.85rem;
   background: var(--white);
+  text-align: center;
 }
 
 .pole-chip-label i {

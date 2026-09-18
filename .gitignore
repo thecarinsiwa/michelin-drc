@@ -1,0 +1,30 @@
+# Assets locaux Cursor
+assets/
+
+# Dossier images de la présentation (ne pas pusher)
+presentation-michelin-rdc/images/
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.avif
+*.bmp
+*.ico
+*.svg
+*.tif
+*.tiff
+
+# Vidéos
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.m4v
+*.mpeg
+*.mpg

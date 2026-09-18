@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plan d'action Michelin RDC 2026-2030 — Programme d'investissement et de développement">
+  <title>Plan d'action Michelin RDC 2026-2030</title>
+
+  <!-- Google Fonts : Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== BARRE DE PROGRESSION ========== -->
+  <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- ========== MENU LATÉRAL ========== -->
+  <aside class="side-nav" id="sideNav" aria-label="Navigation des slides">
+    <button class="side-nav-toggle" id="sideNavToggle" aria-label="Ouvrir / fermer le menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="side-nav-panel">
+      <div class="side-nav-header">
+        <span class="logo-mark">M</span>
+        <span>Sommaire</span>
+      </div>
+      <ul class="side-nav-list" id="sideNavList">
+        <li><button type="button" data-slide="0"><span>01</span> Couverture</button></li>
+        <li><button type="button" data-slide="1"><span>02</span> Vision &amp; Mission</button></li>
+        <li><button type="button" data-slide="2"><span>03</span> Les 8 pôles</button></li>
+        <li><button type="button" data-slide="3"><span>04</span> Bois &amp; commerce</button></li>
+        <li><button type="button" data-slide="4"><span>05</span> Location d'engins</button></li>
+        <li><button type="button" data-slide="5"><span>06</span> Transport camion-benne</button></li>
+        <li><button type="button" data-slide="6"><span>07</span> Génie civil</button></li>
+        <li><button type="button" data-slide="7"><span>08</span> Mobilité hybride</button></li>
+        <li><button type="button" data-slide="8"><span>09</span> Sécurité incendie</button></li>
+        <li><button type="button" data-slide="9"><span>10</span> Ciment-sol</button></li>
+        <li><button type="button" data-slide="10"><span>11</span> Michelin Academy</button></li>
+        <li><button type="button" data-slide="11"><span>12</span> Conclusion</button></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- ========== CONTRÔLES HAUT ========== -->
+  <header class="top-controls">
+    <div class="brand-mini">
+      <span class="logo-mark">M</span>
+      <span class="brand-text">Michelin RDC</span>
+    </div>
+    <div class="control-actions">
+      <button type="button" id="btnFullscreen" class="ctrl-btn" title="Plein écran" aria-label="Plein écran">
+        <i class="fas fa-expand"></i>
+      </button>
+      <button type="button" id="btnPrint" class="ctrl-btn" title="Imprimer" aria-label="Imprimer">
+        <i class="fas fa-print"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== CONTAINER DES SLIDES ========== -->
+  <main class="presentation" id="presentation" aria-live="polite">
+
+    <!-- ===== SLIDE 1 : COUVERTURE ===== -->
+    <section class="slide slide-cover active" data-slide="0" aria-label="Slide 1 — Couverture">
+      <div class="cover-bg" style="background-image: url('images/01_couverture_michelin_rdc.jpg');"></div>
+      <div class="cover-overlay"></div>
+      <div class="cover-content">
+        <div class="cover-logo">
+          <!-- Remplacer par images/02_logo_michelin_rdc.png lorsque disponible -->
+          <img src="images/02_logo_michelin_rdc.png" alt="Logo Michelin RDC" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="logo-fallback" style="display:none;">
+            <span class="logo-mark large">M</span>
+            <span class="logo-name">MICHELIN RDC</span>
+          </div>
+        </div>
+        <p class="cover-eyebrow">Programme d'investissement et de développement</p>
+        <h1>PLAN D'ACTION<br>MICHELIN RDC<br><span class="accent">2026 – 2030</span></h1>
+        <div class="cover-line"></div>
+        <p class="cover-tagline">Infrastructures · Logistique · Industrie · Mobilité · Développement durable</p>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 2 : VISION & MISSION ===== -->
+    <section class="slide" data-slide="1" aria-label="Slide 2 — Vision et Mission">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge">01</span>
+          <h2>Vision &amp; Mission</h2>
+        </header>
+        <p class="slide-intro">Michelin RDC s’inscrit dans une trajectoire de long terme pour accompagner la transformation économique du pays, en combinant savoir-faire technique, capacité d’investissement et ancrage local.</p>
+        <div class="slide-body two-cols">
+          <div class="content-col">
+            <article class="info-card vision-card">
+              <div class="card-icon"><i class="fas fa-eye"></i></div>
+              <h3>Vision</h3>
+              <p>Faire de Michelin RDC un groupe congolais de référence dans les infrastructures, la logistique, l’industrie, la mobilité moderne et la valorisation des ressources.</p>
+              <p style="margin-top:0.65rem;">Nous aspirons à devenir un partenaire de confiance des acteurs publics et privés, capable de livrer des solutions intégrées de bout en bout sur l’ensemble du territoire national.</p>
+            </article>
+            <article class="info-card mission-card">
+              <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+              <h3>Mission</h3>
+              <p>Mettre à disposition du secteur public et privé des équipements, services d’ingénierie et solutions industrielles pour accompagner les grands projets de la RDC.</p>
+              <p style="margin-top:0.65rem;">Notre mission s’appuie sur la qualité opérationnelle, la formation des talents congolais et le respect des standards environnementaux et de sécurité.</p>
+            </article>
+          </div>
+          <div class="media-col">
+            <div class="image-gallery gallery-3">
+              <img src="images/04_carte_rdc_projets 01.jpg" alt="Carte RDC — projets" loading="lazy">
+              <img src="images/04_carte_rdc_projets 03.jpg" alt="Carte RDC — vue projets" loading="lazy">
+              <img src="images/04_carte_rdc_projets 04Route_Boma_Moanda.jpg" alt="Route Boma–Moanda" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="values-row">
+          <div class="value-item">
+            <i class="fas fa-handshake"></i>
+            <strong>Partenariat</strong>
+            <p>Public &amp; privé, au service des grands projets</p>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-leaf"></i>
+            <strong>Durabilité</strong>
+            <p>Valorisation locale et traçabilité</p>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-gears"></i>
+            <strong>Intégration</strong>
+            <p>Chaîne complète : études → livraison</p>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-users"></i>
+            <strong>Emploi local</strong>
+            <p>Compétences congolaises qualifiées</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 3 : LES 8 PÔLES ===== -->
+    <section class="slide" data-slide="2" aria-label="Slide 3 — Les 8 pôles d'activités">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge">02</span>
+          <h2>Les 8 pôles d'activités</h2>
+        </header>
+        <p class="slide-intro">Le plan 2026-2030 s’articule autour de huit pôles complémentaires, conçus pour créer une chaîne de valeur intégrée : de la ressource au chantier, de l’équipement à la formation.</p>
+        <div class="slide-body">
+          <div class="poles-grid">
+            <article class="pole-chip" data-goto="3"><i class="fas fa-tree"></i><span>Bois &amp; commerce international</span></article>
+            <article class="pole-chip" data-goto="4"><i class="fas fa-truck-monster"></i><span>Location d'engins</span></article>
+            <article class="pole-chip" data-goto="5"><i class="fas fa-truck"></i><span>Transport camion-benne</span></article>
+            <article class="pole-chip" data-goto="6"><i class="fas fa-hard-hat"></i><span>Génie civil &amp; infrastructures</span></article>
+            <article class="pole-chip" data-goto="7"><i class="fas fa-charging-station"></i><span>Mobilité hybride</span></article>
+            <article class="pole-chip" data-goto="8"><i class="fas fa-fire-extinguisher"></i><span>Sécurité incendie</span></article>
+            <article class="pole-chip" data-goto="9"><i class="fas fa-industry"></i><span>Ciment-sol industriel</span></article>
+            <article class="pole-chip" data-goto="10"><i class="fas fa-graduation-cap"></i><span>Michelin Academy RDC</span></article>
+          </div>
+          <div class="image-gallery gallery-fill poles-overview">
+            <img src="images/08_vue_ensemble_8_poles 01.jpg" alt="Vue d'ensemble des 8 pôles" loading="lazy">
+            <img src="images/08_vue_ensemble_8_poles 02.jpg" alt="Activités Michelin RDC" loading="lazy">
+            <img src="images/08_vue_ensemble_8_poles 03.jpg" alt="Infrastructures et logistique" loading="lazy">
+            <img src="images/08_vue_ensemble_8_poles 04.jpg" alt="Opérations terrain" loading="lazy">
+            <img src="images/08_vue_ensemble_8_poles 05.jpg" alt="Équipements et chantiers" loading="lazy">
+            <img src="images/08_vue_ensemble_8_poles 06.jpg" alt="Développement industriel" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 4 : PÔLE 1 — BOIS ===== -->
+    <section class="slide" data-slide="3" aria-label="Slide 4 — Pôle 1 Bois et commerce international">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge pole">Pôle 1</span>
+          <h2>Bois et commerce international</h2>
+        </header>
+        <p class="slide-intro">Un pôle stratégique pour transformer la richesse forestière congolaise en valeur ajoutée locale, dans le respect de la légalité, de la traçabilité et des marchés internationaux.</p>
+        <div class="slide-body two-cols">
+          <div class="content-col">
+            <h3 class="section-label"><i class="fas fa-list-check"></i> Activités</h3>
+            <ul class="feature-list">
+              <li>Exploitation et commercialisation légale du bois</li>
+              <li>Exportation vers les marchés régionaux et internationaux</li>
+              <li>Transformation locale (sciage, séchage, semi-finis)</li>
+              <li>Traçabilité et conformité réglementaire</li>
+              <li>Partenariats avec opérateurs et institutions</li>
+            </ul>
+            <div class="objective-box">
+              <strong><i class="fas fa-flag"></i> Objectif 2026-2030</strong>
+              <p>Passer de l’exportation de matières premières à la valorisation locale, en développant des unités de transformation et des filières durables créatrices d’emplois.</p>
+            </div>
+            <div class="values-row" style="grid-template-columns: repeat(2, 1fr);">
+              <div class="value-item">
+                <i class="fas fa-certificate"></i>
+                <strong>Légalité</strong>
+                <p>Conformité et documents d’origine</p>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-industry"></i>
+                <strong>Transformation</strong>
+                <p>Valeur ajoutée sur le sol congolais</p>
+              </div>
+            </div>
+          </div>
+          <div class="media-col">
+            <div class="image-gallery gallery-3">
+              <img src="images/pole1_foret_equatoriale_rdc 01.jpg" alt="Forêt équatoriale RDC" loading="lazy">
+              <img src="images/pole1_foret_equatoriale_rdc 02.jpg" alt="Ressources forestières" loading="lazy">
+              <img src="images/pole1_foret_equatoriale_rdc 03.jpg" alt="Exploitation forestière durable" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 5 : PÔLE 2 — ENGINS ===== -->
+    <section class="slide" data-slide="4" aria-label="Slide 5 — Pôle 2 Location d'engins">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge pole">Pôle 2</span>
+          <h2>Location d'engins de génie civil</h2>
+        </header>
+        <p class="slide-intro">Un parc d’engins modernes et entretenus pour répondre rapidement aux besoins des chantiers de construction, miniers et de travaux publics sur tout le territoire.</p>
+        <div class="slide-body">
+          <div class="cards-row">
+            <article class="info-card compact">
+              <h3><i class="fas fa-cogs"></i> Engins</h3>
+              <ul class="feature-list compact">
+                <li>Tracteurs &amp; tractopelles</li>
+                <li>Compacteurs</li>
+                <li>Pelles hydrauliques</li>
+                <li>Chargeuses &amp; niveleuses</li>
+              </ul>
+            </article>
+            <article class="info-card compact">
+              <h3><i class="fas fa-handshake"></i> Services</h3>
+              <ul class="feature-list compact">
+                <li>Location horaire, journalière, mensuelle</li>
+                <li>Location longue durée</li>
+                <li>Maintenance préventive &amp; curative</li>
+                <li>Opérateurs qualifiés disponibles</li>
+              </ul>
+            </article>
+            <article class="info-card compact">
+              <h3><i class="fas fa-building"></i> Clients</h3>
+              <ul class="feature-list compact">
+                <li>Entreprises de construction</li>
+                <li>Sociétés minières</li>
+                <li>Travaux publics</li>
+                <li>Collectivités &amp; projets publics</li>
+              </ul>
+            </article>
+          </div>
+          <div class="image-gallery gallery-fill">
+            <img src="images/pole2_pelle_hydraulique 01.jpg" alt="Pelle hydraulique" loading="lazy">
+            <img src="images/pole2_pelle_hydraulique 02.jpg" alt="Engin de génie civil" loading="lazy">
+            <img src="images/pole2_pelle_hydraulique 03.jpg" alt="Parc d'engins Michelin" loading="lazy">
+            <img src="images/pole2_pelle_hydraulique 04.jpg" alt="Engin sur chantier" loading="lazy">
+            <img src="images/pole2_pelle_hydraulique 05.jpg" alt="Équipement de terrassement" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 6 : PÔLE 3 — TRANSPORT ===== -->
+    <section class="slide" data-slide="5" aria-label="Slide 6 — Pôle 3 Transport et camion-benne">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge pole">Pôle 3</span>
+          <h2>Transport et camion-benne</h2>
+        </header>
+        <p class="slide-intro">La logistique est le maillon vital des chantiers. Michelin RDC construit une flotte dédiée pour fiabiliser l’acheminement des matériaux vers les sites de construction.</p>
+        <div class="slide-body two-cols">
+          <div class="content-col">
+            <p class="lead">Création d’une flotte de camions-bennes <strong>MICHELIN</strong> pour sécuriser les délais et la qualité d’approvisionnement.</p>
+            <h3 class="section-label"><i class="fas fa-boxes-stacked"></i> Matériaux transportés</h3>
+            <ul class="tag-list">
+              <li>Sable</li>
+              <li>Gravier</li>
+              <li>Moellons</li>
+              <li>Terre</li>
+              <li>Ciment</li>
+              <li>Matériaux routiers</li>
+            </ul>
+            <div class="chain-flow">
+              <span>Fournisseur</span>
+              <i class="fas fa-arrow-right"></i>
+              <span>Camion Michelin</span>
+              <i class="fas fa-arrow-right"></i>
+              <span>Chantier</span>
+              <i class="fas fa-arrow-right"></i>
+              <span>Construction</span>
+            </div>
+            <div class="objective-box">
+              <strong><i class="fas fa-flag"></i> Objectif</strong>
+              <p>Mettre en place une chaîne intégrée Fournisseur → Camion Michelin → Chantier → Construction, avec suivi des rotations et disponibilité élevée de la flotte.</p>
+            </div>
+          </div>
+          <div class="media-col">
+            <div class="image-gallery gallery-3">
+              <img src="images/pole3_camion_benne_michelin 01.jpg" alt="Camion-benne Michelin" loading="lazy">
+              <img src="images/pole3_camion_benne_michelin 02.jpg" alt="Flotte de camions" loading="lazy">
+              <img src="images/pole3_camion_benne_michelin 03.jpg" alt="Transport de matériaux" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 7 : PÔLE 4 — GÉNIE CIVIL ===== -->
+    <section class="slide" data-slide="6" aria-label="Slide 7 — Pôle 4 Génie civil et infrastructures">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge pole">Pôle 4</span>
+          <h2>Génie civil et infrastructures</h2>
+        </header>
+        <p class="slide-intro">Du bâtiment à la route, Michelin RDC propose une offre complète d’études et de réalisation d’infrastructures structurantes pour les territoires et les entreprises.</p>
+        <div class="slide-body">
+          <div class="cards-row four">
+            <article class="info-card compact">
+              <h3><i class="fas fa-building"></i> Bâtiments</h3>
+              <p>Administratifs, commerciaux, résidentiels et industriels — conception et construction clé en main.</p>
+            </article>
+            <article class="info-card compact">
+              <h3><i class="fas fa-road"></i> Routes</h3>
+              <p>Réhabilitation, terrassement, drainage, assainissement et ouvrages d’art.</p>
+            </article>
+            <article class="info-card compact">
+              <h3><i class="fas fa-futbol"></i> Sport</h3>
+              <p>Stades, terrains de sport et tribunes pour les collectivités et institutions.</p>
+            </article>
+            <article class="info-card compact">
+              <h3><i class="fas fa-bridge"></i> Autres</h3>
+              <p>Ponts, caniveaux, entrepôts, hangars et plateformes logistiques.</p>
+            </article>
+          </div>
+          <div class="chain-flow model">
+            <span>Études</span>
+            <i class="fas fa-arrow-right"></i>
+            <span>Terrassement</span>
+            <i class="fas fa-arrow-right"></i>
+            <span>Transport</span>
+            <i class="fas fa-arrow-right"></i>
+            <span>Construction</span>
+            <i class="fas fa-arrow-right"></i>
+            <span>Livraison</span>
+          </div>
+          <div class="image-gallery gallery-fill">
+            <img src="images/pole4_construction_route 01.jpg" alt="Construction de route" loading="lazy">
+            <img src="images/pole4_construction_route 02.jpg" alt="Chantier d'infrastructure" loading="lazy">
+            <img src="images/pole4_construction_route 03.jpg" alt="Travaux de génie civil" loading="lazy">
+            <img src="images/pole4_construction_route 04.jpg" alt="Terrassement" loading="lazy">
+            <img src="images/pole4_construction_route 05.jpg" alt="Infrastructure routière" loading="lazy">
+            <img src="images/pole4_construction_route 06.jpg" alt="Ouvrage de génie civil" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 8 : PÔLE 5 — MOBILITÉ ===== -->
+    <section class="slide" data-slide="7" aria-label="Slide 8 — Pôle 5 Mobilité hybride">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge pole">Pôle 5</span>
+          <h2>Mobilité hybride et stations de recharge</h2>
+        </header>
+        <p class="slide-intro">Anticiper la transition énergétique de la mobilité en RDC : véhicules hybrides/électrifiés, infrastructure de recharge et services techniques associés.</p>
+        <div class="slide-body two-cols">
+          <div class="content-col">
+            <h3 class="section-label"><i class="fas fa-bolt"></i> Offre</h3>
+            <ul class="feature-list">
+              <li>Commercialisation de véhicules hybrides / électrifiés</li>
+              <li>Solutions de recharge et installation de stations</li>
+              <li>Maintenance, diagnostic et suivi technique</li>
+              <li>Accompagnement des flottes d’entreprise</li>
+            </ul>
+            <div class="highlight-box">
+              <h3><i class="fas fa-star"></i> Projet phare</h3>
+              <p class="highlight-title">MICHELIN HYBRID MOBILITY CENTER</p>
+              <p style="font-size:0.88rem;color:var(--gray-700);margin-bottom:0.75rem;">Centre intégré dédié à la mobilité nouvelle génération en RDC.</p>
+              <ul class="tag-list">
+                <li>Recharge</li>
+                <li>Espace technique</li>
+                <li>Entretien</li>
+                <li>Diagnostic</li>
+                <li>Vente</li>
+                <li>Pièces</li>
+                <li>Sensibilisation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="media-col">
+            <div class="image-gallery gallery-3">
+              <img src="images/pole5_station_recharge 01.jpg" alt="Station de recharge" loading="lazy">
+              <img src="images/pole5_station_recharge 02.jpg" alt="Véhicule hybride" loading="lazy">
+              <img src="images/pole5_station_recharge 03.jpg" alt="Mobilité électrique" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 9 : PÔLE 6 — INCENDIE ===== -->
+    <section class="slide" data-slide="8" aria-label="Slide 9 — Pôle 6 Sécurité incendie">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge pole">Pôle 6</span>
+          <h2>Sécurité incendie</h2>
+        </header>
+        <p class="slide-intro">Protéger les personnes et les biens grâce à une offre complète d’équipements, d’installation et de maintenance conforme aux exigences des sites sensibles.</p>
+        <div class="slide-body two-cols">
+          <div class="content-col">
+            <h3 class="section-label"><i class="fas fa-shield-halved"></i> Prestations</h3>
+            <ul class="feature-list">
+              <li>Vente d’extincteurs et équipements de lutte contre l’incendie</li>
+              <li>Installation et mise en conformité des sites</li>
+              <li>Contrôles périodiques et maintenance</li>
+              <li>Renouvellement et modernisation du parc</li>
+              <li>Conseil et sensibilisation des équipes</li>
+            </ul>
+            <h3 class="section-label"><i class="fas fa-store"></i> Marchés ciblés</h3>
+            <ul class="tag-list">
+              <li>Entreprises</li>
+              <li>Hôtels</li>
+              <li>Écoles</li>
+              <li>Bâtiments administratifs</li>
+              <li>Entrepôts</li>
+              <li>Sites industriels</li>
+              <li>Chantiers</li>
+            </ul>
+          </div>
+          <div class="media-col">
+            <div class="image-gallery gallery-3">
+              <img src="images/pole6_extincteurs 01.jpg" alt="Extincteurs" loading="lazy">
+              <img src="images/pole6_extincteurs 02.jpg" alt="Équipements de sécurité incendie" loading="lazy">
+              <img src="images/pole6_extincteurs 03.jpg" alt="Installation sécurité incendie" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 10 : PÔLE 7 — CIMENT-SOL ===== -->
+    <section class="slide" data-slide="9" aria-label="Slide 10 — Pôle 7 Fabrication du ciment-sol">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge pole">Pôle 7</span>
+          <h2>Industriel : fabrication du ciment-sol</h2>
+        </header>
+        <p class="slide-intro">Une filière industrielle locale pour produire un liant adapté aux plateformes et voiries, en réduisant les coûts d’importation et en sécurisant l’approvisionnement des chantiers.</p>
+        <div class="slide-body two-cols">
+          <div class="content-col">
+            <h3 class="section-label"><i class="fas fa-flask"></i> Étapes du programme</h3>
+            <ol class="steps-list">
+              <li>Études géotechniques</li>
+              <li>Essais laboratoire</li>
+              <li>Unité pilote</li>
+              <li>Certification</li>
+              <li>Production industrielle</li>
+              <li>Distribution sur chantiers</li>
+            </ol>
+            <h3 class="section-label"><i class="fas fa-map-location-dot"></i> Utilisations</h3>
+            <ul class="tag-list">
+              <li>Plateformes</li>
+              <li>Voiries</li>
+              <li>Routes</li>
+              <li>Aménagements</li>
+              <li>Terrassement</li>
+            </ul>
+            <div class="objective-box">
+              <strong><i class="fas fa-flag"></i> Objectif</strong>
+              <p>Développer une production locale fiable pour réduire les coûts, raccourcir les délais et renforcer l’autonomie des projets d’infrastructure.</p>
+            </div>
+          </div>
+          <div class="media-col">
+            <div class="image-gallery gallery-3">
+              <img src="images/pole7_production_ciment_sol 01.jpg" alt="Production ciment-sol" loading="lazy">
+              <img src="images/pole7_production_ciment_sol 02.jpg" alt="Unité de production" loading="lazy">
+              <img src="images/pole7_production_ciment_sol 03.jpg" alt="Laboratoire géotechnique" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 11 : PÔLE 8 — ACADEMY ===== -->
+    <section class="slide" data-slide="10" aria-label="Slide 11 — Pôle 8 Michelin Academy RDC">
+      <div class="slide-inner">
+        <header class="slide-header">
+          <span class="slide-badge pole">Pôle 8</span>
+          <h2>Formation et emploi : Michelin Academy RDC</h2>
+        </header>
+        <p class="slide-intro">La montée en compétences est au cœur du plan d’action : former des professionnels congolais pour opérer, entretenir et diriger les activités des huit pôles.</p>
+        <div class="slide-body two-cols">
+          <div class="content-col">
+            <h3 class="section-label"><i class="fas fa-chalkboard-user"></i> Filieres de formation</h3>
+            <ul class="feature-list">
+              <li>Conducteurs d’engins de génie civil</li>
+              <li>Mécaniciens et techniciens de maintenance</li>
+              <li>Chauffeurs poids lourds</li>
+              <li>Ouvriers spécialisés du bâtiment et des routes</li>
+              <li>Jeunes ingénieurs (encadrement technique)</li>
+              <li>Responsables de chantier et superviseurs</li>
+            </ul>
+            <div class="objective-box">
+              <strong><i class="fas fa-flag"></i> Objectif</strong>
+              <p>Constituer une main-d’œuvre congolaise qualifiée, employable et adaptée aux standards opérationnels de Michelin RDC et de ses partenaires.</p>
+            </div>
+          </div>
+          <div class="media-col">
+            <div class="image-gallery gallery-3">
+              <img src="images/pole8_salle_formation 01.jpg" alt="Salle de formation" loading="lazy">
+              <img src="images/pole8_salle_formation 02.jpg" alt="Formation conducteur d'engins" loading="lazy">
+              <img src="images/pole8_salle_formation 03.jpg" alt="Michelin Academy RDC" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 12 : CONCLUSION ===== -->
+    <section class="slide slide-outro" data-slide="11" aria-label="Slide 12 — Conclusion">
+      <div class="outro-bg" style="background-image: url('images/01_couverture_michelin_rdc 08.jpg');"></div>
+      <div class="cover-overlay"></div>
+      <div class="outro-content">
+        <span class="logo-mark large">M</span>
+        <h2>Ensemble, construisons<br>la RDC de demain</h2>
+        <p class="outro-thanks">Merci pour votre attention</p>
+        <p style="max-width:560px;margin:0.75rem auto 0;opacity:0.9;font-size:0.95rem;">Infrastructures, logistique, industrie, mobilité et formation : un même engagement pour le développement durable de la République Démocratique du Congo.</p>
+        <div class="cover-line"></div>
+        <div class="contacts">
+          <h3>Contacts</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:contact@michelin-rdc.cd">contact@michelin-rdc.cd</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+243000000000">+243 XX XXX XX XX</a></li>
+            <li><i class="fas fa-location-dot"></i> Kinshasa, République Démocratique du Congo</li>
+            <li><i class="fas fa-globe"></i> <span>www.michelin-rdc.cd</span></li>
+          </ul>
+          <p class="contact-note">À compléter avec vos coordonnées officielles</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== NAVIGATION BAS ========== -->
+  <footer class="bottom-nav">
+    <button type="button" id="btnPrev" class="nav-btn" aria-label="Slide précédente">
+      <i class="fas fa-chevron-left"></i>
+      <span>Précédent</span>
+    </button>
+    <div class="slide-counter" aria-live="polite">
+      <span id="currentSlide">1</span>
+      <span class="sep">/</span>
+      <span id="totalSlides">12</span>
+    </div>
+    <button type="button" id="btnNext" class="nav-btn" aria-label="Slide suivante">
+      <span>Suivant</span>
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </footer>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog" aria-label="Aperçu de l'image">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Fermer">&times;</button>
+    <button type="button" class="lightbox-nav prev" id="lightboxPrev" aria-label="Image précédente"><i class="fas fa-chevron-left"></i></button>
+    <img src="" alt="" id="lightboxImg">
+    <button type="button" class="lightbox-nav next" id="lightboxNext" aria-label="Image suivante"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

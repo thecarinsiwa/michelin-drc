@@ -5,19 +5,23 @@
 
 /* ---------- Variables ---------- */
 :root {
-  --michelin-blue: #27509B;
-  --michelin-blue-dark: #1a3a75;
-  --michelin-blue-light: #3a6bb5;
-  --michelin-yellow: #FCE500;
+  --brand: #E30613;
+  --brand-dark: #B0000C;
+  --brand-light: #FF3B47;
+  --brand-accent: #ffffff;
+  --michelin-blue: #E30613;
+  --michelin-blue-dark: #B0000C;
+  --michelin-blue-light: #FF3B47;
+  --michelin-yellow: #ffffff;
   --white: #ffffff;
   --black: #111111;
-  --gray-50: #f7f8fa;
-  --gray-100: #eef0f4;
-  --gray-200: #dfe3ea;
+  --gray-50: #fafafa;
+  --gray-100: #f0f0f0;
+  --gray-200: #e2e2e2;
   --gray-500: #6b7280;
   --gray-700: #374151;
   --shadow: 0 8px 24px rgba(17, 17, 17, 0.08);
-  --shadow-lg: 0 16px 40px rgba(39, 80, 155, 0.18);
+  --shadow-lg: 0 16px 40px rgba(227, 6, 19, 0.18);
   --radius: 12px;
   --radius-sm: 8px;
   --transition: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,7 +83,7 @@ button {
   left: 0;
   height: 4px;
   width: 0%;
-  background: linear-gradient(90deg, var(--michelin-blue), var(--michelin-yellow));
+  background: linear-gradient(90deg, var(--brand-dark), var(--brand));
   z-index: 1000;
   transition: width 0.35s ease;
 }
@@ -92,8 +96,8 @@ button {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--michelin-yellow);
-  color: var(--michelin-blue);
+  background: var(--brand);
+  color: var(--white);
   font-weight: 800;
   font-size: 0.95rem;
   flex-shrink: 0;
@@ -104,6 +108,32 @@ button {
   height: 72px;
   font-size: 2rem;
   box-shadow: var(--shadow);
+}
+
+.brand-logo {
+  display: block;
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-logo.nav {
+  height: 32px;
+}
+
+.brand-logo.side {
+  height: 40px;
+}
+
+.brand-logo.cover {
+  height: clamp(88px, 14vh, 140px);
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.45));
+}
+
+.brand-logo.outro {
+  height: clamp(72px, 12vh, 110px);
+  margin: 0 auto 0.5rem;
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.45));
 }
 
 /* ---------- Contrôles haut ---------- */
@@ -129,14 +159,10 @@ button {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(8px);
-  padding: 0.35rem 0.85rem 0.35rem 0.4rem;
-  border-radius: 999px;
+  background: #111111;
+  padding: 0.3rem 0.75rem;
+  border-radius: 10px;
   box-shadow: var(--shadow);
-  font-weight: 600;
-  font-size: 0.85rem;
-  color: var(--michelin-blue);
 }
 
 .control-actions {
@@ -158,7 +184,8 @@ button {
 }
 
 .ctrl-btn:hover {
-  background: var(--michelin-yellow);
+  background: var(--brand);
+  color: var(--white);
   transform: scale(1.06);
 }
 
@@ -216,9 +243,15 @@ button {
   gap: 0.75rem;
   padding: 0 1.25rem 1rem;
   font-weight: 700;
-  color: var(--michelin-blue);
+  color: var(--brand);
   border-bottom: 1px solid var(--gray-100);
   margin-bottom: 0.5rem;
+}
+
+.side-nav-header .brand-logo {
+  background: #111;
+  border-radius: 8px;
+  padding: 0.25rem 0.4rem;
 }
 
 .side-nav-list button {
@@ -248,8 +281,8 @@ button {
 }
 
 .side-nav-list button.active {
-  border-left: 3px solid var(--michelin-yellow);
-  background: linear-gradient(90deg, rgba(252, 229, 0, 0.15), transparent);
+  border-left: 3px solid var(--brand);
+  background: linear-gradient(90deg, rgba(227, 6, 19, 0.1), transparent);
 }
 
 /* ---------- Présentation / Slides ---------- */
@@ -318,8 +351,8 @@ button {
 }
 
 .slide-badge.pole {
-  background: var(--michelin-yellow);
-  color: var(--michelin-blue-dark);
+  background: var(--brand);
+  color: var(--white);
 }
 
 .slide-header h2 {
@@ -441,8 +474,8 @@ button {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(26, 58, 117, 0.92) 0%,
-    rgba(39, 80, 155, 0.75) 45%,
+    rgba(176, 0, 12, 0.92) 0%,
+    rgba(227, 6, 19, 0.78) 45%,
     rgba(17, 17, 17, 0.55) 100%
   );
 }
@@ -462,23 +495,17 @@ button {
   justify-content: center;
 }
 
-.logo-img {
-  max-height: 80px;
-  width: auto;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+.cover-logo .brand-logo {
+  background: #111;
+  border-radius: 16px;
+  padding: 0.75rem 1.25rem;
 }
 
-.logo-fallback {
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo-name {
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  font-size: 0.9rem;
-  color: var(--michelin-yellow);
+.outro-content .brand-logo {
+  background: #111;
+  border-radius: 16px;
+  padding: 0.65rem 1.1rem;
+  display: block;
 }
 
 .cover-eyebrow {
@@ -498,13 +525,16 @@ button {
 }
 
 .cover-content h1 .accent {
-  color: var(--michelin-yellow);
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.55);
+  text-underline-offset: 0.15em;
 }
 
 .cover-line {
   width: 80px;
   height: 4px;
-  background: var(--michelin-yellow);
+  background: var(--white);
   margin: 1.5rem auto;
   border-radius: 2px;
 }
@@ -546,12 +576,12 @@ button {
 }
 
 .vision-card .card-icon {
-  background: linear-gradient(135deg, var(--michelin-blue), #1e4a8c);
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand));
 }
 
 .mission-card .card-icon {
-  background: linear-gradient(135deg, #c9a800, var(--michelin-yellow));
-  color: var(--michelin-blue-dark);
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+  color: var(--white);
 }
 
 .info-card h3 {
@@ -635,8 +665,8 @@ button {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--michelin-yellow);
-  box-shadow: 0 0 0 3px rgba(252, 229, 0, 0.35);
+  background: var(--brand);
+  box-shadow: 0 0 0 3px rgba(227, 6, 19, 0.25);
 }
 
 .feature-list.compact li {
@@ -651,13 +681,13 @@ button {
 }
 
 .tag-list li {
-  background: var(--gray-100);
-  color: var(--michelin-blue-dark);
+  background: rgba(227, 6, 19, 0.08);
+  color: var(--brand-dark);
   font-size: 0.78rem;
   font-weight: 600;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  border: 1px solid var(--gray-200);
+  border: 1px solid rgba(227, 6, 19, 0.2);
 }
 
 .steps-list {
@@ -705,8 +735,8 @@ button {
 /* ---------- Objectif / Highlight ---------- */
 .objective-box,
 .highlight-box {
-  background: linear-gradient(135deg, rgba(39, 80, 155, 0.08), rgba(252, 229, 0, 0.12));
-  border-left: 4px solid var(--michelin-yellow);
+  background: linear-gradient(135deg, rgba(227, 6, 19, 0.06), rgba(227, 6, 19, 0.12));
+  border-left: 4px solid var(--brand);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   padding: 1rem 1.15rem;
   margin-top: 0.5rem;
@@ -764,7 +794,7 @@ button {
 }
 
 .chain-flow i {
-  color: var(--michelin-yellow);
+  color: var(--brand);
   font-size: 0.75rem;
 }
 
@@ -831,8 +861,8 @@ button {
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background: var(--michelin-blue);
-  color: var(--michelin-yellow);
+  background: var(--brand);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -851,8 +881,8 @@ button {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: var(--michelin-blue);
-  color: var(--michelin-yellow);
+  background: var(--brand);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -869,7 +899,7 @@ button {
 .pole-chip:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--michelin-yellow);
+  border-color: var(--brand);
 }
 
 .poles-overview {
@@ -960,7 +990,7 @@ button {
 .outro-thanks {
   font-size: 1.15rem;
   font-weight: 500;
-  color: var(--michelin-yellow);
+  color: var(--white);
   letter-spacing: 0.04em;
 }
 
@@ -980,7 +1010,7 @@ button {
 .contacts h3 {
   font-size: 0.95rem;
   margin-bottom: 0.85rem;
-  color: var(--michelin-yellow);
+  color: var(--white);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -1000,7 +1030,7 @@ button {
 
 .contacts li i {
   width: 20px;
-  color: var(--michelin-yellow);
+  color: var(--white);
   text-align: center;
 }
 
@@ -1318,6 +1348,6 @@ button {
 
 /* ---------- Accessibilité focus ---------- */
 :focus-visible {
-  outline: 3px solid var(--michelin-yellow);
+  outline: 3px solid var(--brand);
   outline-offset: 2px;
 }

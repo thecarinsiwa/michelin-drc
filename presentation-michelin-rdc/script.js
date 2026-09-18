@@ -304,11 +304,22 @@
       }
     });
 
-    // Pôles cliquables (slide 3)
+    // Pôles cliquables (slide 3) : image = lightbox, label = navigation
+    const poleChipImgs = Array.from(document.querySelectorAll(".poles-with-images .pole-chip > img"));
     document.querySelectorAll(".pole-chip[data-goto]").forEach(function (chip) {
-      chip.addEventListener("click", function () {
+      chip.addEventListener("click", function (e) {
+        // Clic sur l'image → lightbox, pas de navigation
+        if (e.target.tagName === "IMG") return;
         const idx = parseInt(chip.getAttribute("data-goto"), 10);
         if (!isNaN(idx)) goTo(idx);
+      });
+    });
+
+    poleChipImgs.forEach(function (img, i) {
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", function (e) {
+        e.stopPropagation();
+        openLightbox(poleChipImgs, i);
       });
     });
 
